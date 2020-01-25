@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Targeted Selectors</title>
+    <style>
+      div p {
+        background: #ddd;
+      }
+      div > p {
+        background: #89d389;
+      }
+      div + p {
+        background: #333;
+      }
+
+      a[target="_blank"] {
+        background: #c76781;
+      }
+
+      form,
+      input[type="submit"] {
+        margin: 0.5rem;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        margin: 0.3rem 1rem 1rem;
+        width: 80%;
+        display: block;
+      }
+      .test-div {
+        background: #b66363;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: all 1s ease-in-out;
+      }
+
+      .test-div:hover {
+        background: #3f2424;
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+      }
+      .test-div > h3 {
+        color: #89d389;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="test-div"><h3>Hover over me</h3></div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <ul>
+        <li>item 1</li>
+        <li><p>item 2</p></li>
+        <li>item 3</li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <a href="#">page1</a>
+    <a href="#">page2</a>
+    <a href="www.google.com" target="_blank">Google</a>
+
+    <form action="">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Name" />
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Email" />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>

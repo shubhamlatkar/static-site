@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+p {
+  margin: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* utility */
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #93cb52;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.button-dark-class:hover,
+.button-class:hover {
+  background: #7ab436;
+}
+
+.button-dark-class {
+  background: #333;
+  color: #fff;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.button-class {
+  display: inline-block;
+  color: #fff;
+  background: #93cb52;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.bg-light {
+  background: #f4f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  color: #f4f4f4f4;
+  background: #333;
+}
+
+.bg-primary {
+  background: #93cb52;
+  color: #fff;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
+}
+
+/* navabr */
+
+#navabr {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: #ffff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#navabr ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navabr ul li {
+  padding: 0 0.25rem;
+  margin: 0.25rem 0.25rem;
+}
+
+#navabr ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#navabr ul li:hover {
+  background: #93cb52;
+  border-radius: 5px;
+}
+
+/* showcase*/
+#showcase {
+  background: #333
+    url("https://images.pexels.com/photos/754082/pexels-photo-754082.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
+    no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /* overlay */
+  position: absolute;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* what we do  */
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .item i {
+  background: #93cd52;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+/* End what we do  */
+
+/* Who we are */
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+}
+
+#who .who-img {
+  background: url("https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    no-repeat center center/cover;
+}
+/*End Who we are */
+
+/* clients css */
+#clients .items {
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto 0.3rem;
+  width: 100%;
+  border-radius: 50%;
+  height: 5rem;
+}
+/*End clients css */
+
+/* contact section */
+#contact {
+  display: flex;
+}
+
+#contact .map,
+#contact .contact-form {
+  flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.755rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea,
+#contact .contact-form button {
+  width: 100%;
+  padding: 0.5rem;
+}
+/*End contact section */

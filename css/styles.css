@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* main content start */
+.container {
+  padding: 10px 10px;
+  background: url("https://picsum.photos/500/400/?blur=3") no-repeat center
+    center;
+  background-attachment: fixed;
+  max-width: 960px;
+  margin: 5px auto;
+}
+
+.container div {
+  border: 1px solid #4b4a4a;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+}
+
+.container p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.3em;
+  text-align: justify;
+}
+
+.btn {
+  background: #4c6ca0;
+  color: #fff;
+  border: none;
+  font-size: 1.3em;
+  padding: 4px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.btn:hover {
+  color: #f4f4f4;
+  background: #446190;
+}
+
+/* main content end */
+
+/* sidemenu start */
+.side-menu {
+  list-style: none;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.side-menu li {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  border-bottom: 1px dotted black;
+}
+
+.side-menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.side-menu li a:hover {
+  color: #bdccbd;
+}
+/* sidemenu end */
+
+/* navbar start */
+.navbar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid black;
+  background: #4c6ca0;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 20px;
+}
+
+.navbar li a:hover {
+  background-color: #446190;
+  color: #f4f4f4;
+}
+/* navbar end */
+/* second-navbar */
+
+.second-navbar li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.second-navbar li a {
+  text-decoration: none;
+}
+/* second-navbar */
+
+/* banner divs start */
+.box {
+  border: 1px solid black;
+  width: 50%;
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 5px;
+  margin: 10px 120px;
+}
+/* banner divs end */
+
+/* position divs end */
+.position-container {
+  position: relative;
+  width: 500px;
+  height: 1000px;
+  background: #333;
+  margin: 0 auto;
+}
+
+.position-container .box {
+  background-color: #bdccbd;
+}
+/* position divs end */
+
+/* form decoration start */
+#form {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: #344a72;
+  color: #fff;
+  line-height: 1.8em;
+}
+#form a {
+  text-decoration: none;
+}
+
+#form .form-container {
+  margin: 30px auto;
+  max-width: 400px;
+  padding: 20px;
+}
+
+#form .form-container .form-wrap {
+  background: #fff;
+  padding: 15px 25px;
+  color: #333;
+}
+
+#form .form-container .form-wrap h1 {
+  display: block;
+  text-align: center;
+  font-size: 1.8em;
+  font-family: "Viga", sans-serif;
+}
+#form .form-container .form-wrap p {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+#form .form-container .form-wrap .form-group {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#form .form-container .form-wrap .form-group label {
+  display: block;
+  color: #666;
+}
+
+#form .form-container .form-wrap .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: #ddd 1px solid;
+  border-radius: 5px;
+}
+
+#form .form-container .form-wrap .form-group input:focus {
+  border: rgb(114, 159, 194) 1px solid;
+}
+
+#form .form-container .form-wrap .btn {
+  background-color: #4caf50;
+  border: 1px solid #4caf50;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  display: block;
+}
+
+#form .form-container footer p a {
+  text-decoration: none;
+  color: #4caf50;
+}
+
+#form .form-container .form-wrap .bottom-text {
+  font-size: 1em;
+}
+
+/* form decoration ends */
+
+/* Hotel decoration starts */
+#hotel-section {
+  line-height: 1.7em;
+  box-sizing: border-box;
+}
+
+#hotel-section * {
+  margin: 0;
+  padding: 0;
+}
+
+#hotel-section .navbar {
+  background: #333;
+  color: #fff;
+  overflow: auto;
+}
+
+#hotel-section .navbar .navbar-container {
+  max-width: 960px;
+  margin: auto;
+}
+
+#hotel-section .navbar .navbar-container h1 {
+  margin: 10px 10px;
+  float: left;
+}
+
+#hotel-section .navbar .navbar-container h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#hotel-section .navbar .navbar-container ul {
+  float: right;
+}
+
+#hotel-section .navbar .navbar-container ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+#hotel-section .navbar .navbar-container ul li a {
+  padding: 10px 10px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Hotel decoration eends */

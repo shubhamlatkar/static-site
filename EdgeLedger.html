@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Edge Leger</title>
+    <!-- custome styelsheet -->
+    <link rel="stylesheet" type="text/css" href="./css/Styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (min-width: 900px)"
+      href="./css//wideScreenStyles.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (max-width: 768px)"
+      href="./css/mobileStyles.css"
+    />
+  </head>
+  <body id="edge-ledger">
+    <!-- navbar -->
+    <nav id="navabr">
+      <h1 class="logo">
+        <span class="text-primary"><i class="fa fa-book-open"></i> Edge</span>
+        Ledger
+      </h1>
+      <ul>
+        <li><a href="edge-ledger">Home</a></li>
+        <li><a href="who">Who</a></li>
+        <li><a href="what">What</a></li>
+        <li><a href="clients">Clients</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <header id="showcase">
+      <div class="showcase-content">
+        <h1 class="l-heading">
+          The sky is limit
+        </h1>
+        <p class="lead">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
+          odit accusantium eveniet ipsa illo expedita a et rem quaerat fugiat
+          modi veritatis ducimus, voluptatum ab, commodi architecto saepe.
+          Delectus, fugit.
+        </p>
+        <a class="button-class" href="#what">Learn More</a>
+      </div>
+    </header>
+    <div id="what" class="lg-light py-1">
+      <h2 class="m-heading text-center">
+        <span class="text-primary">What</span> We Do
+      </h2>
+      <div class="items">
+        <div class="item">
+          <i class="fa fa-university fa-2x"></i>
+          <div>
+            <h3>Investment Banking</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+              fugiat!
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fa fa-book-reader fa-2x"></i>
+          <div>
+            <h3>Portfolio Management</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+              fugiat!
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fa fa-pencil-alt fa-2x"></i>
+          <div>
+            <h3>Tax and Custodial</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+              fugiat!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="who">
+      <div class="who-img"></div>
+      <div class="who-text bg-dark p-2">
+        <h2 class="m-heading"><span class="text-primary">Who</span> We Are</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+          inventore necessitatibus nisi?
+        </p>
+        <h3>Our Team</h3>
+        <ul class="list">
+          <li>Shubham: CEO</li>
+          <li>Kunal: CFO</li>
+          <li>Atharva: MD</li>
+          <li>Vedang: SA</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="clients">
+      <div class="container">
+        <h2 class="m-heading text-center">
+          <span class="text-primary">Our</span> Clients
+        </h2>
+        <div class="items py-1">
+          <img
+            src="https://images.pexels.com/photos/168938/pexels-photo-168938.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="client1"
+          />
+          <img
+            src="https://images.pexels.com/photos/176837/pexels-photo-176837.jpeg?cs=srgb&dl=san-diego-apparel-america-s-finest-city-176837.jpg&fm=jpg"
+            alt="cliten2"
+          />
+          <img
+            src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="client3"
+          />
+          <img
+            src="https://images.pexels.com/photos/2922140/pexels-photo-2922140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="client4"
+          />
+          <img
+            src="https://images.pexels.com/photos/768332/pexels-photo-768332.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="client5"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-form bg-primary p-2">
+        <h2 class="m-heading">Contact Us</h2>
+        <p>Please use the form to contact us</p>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Enter your Phone Number"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter your Message"
+            ></textarea>
+          </div>
+          <button type="submit" class="button-dark-class">
+            Submit
+          </button>
+        </form>
+      </div>
+      <div id="map" class="map"></div>
+    </section>
+    <footer id="main-footer" class="text-center bg-dark py-1">
+      <div class="container">
+        <p>Copyright &copy; 2020, EdgeLedger, All Rights Reserved</p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/scripts/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1bc3836927.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhnW6CTNVcnrK6OSnKhzn4x1R71joNriY&callback=initMap"
+    ></script>
+  </body>
+</html>
+
+<!-- AIzaSyAhnW6CTNVcnrK6OSnKhzn4x1R71joNriY -->
