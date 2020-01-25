@@ -1,7 +1,7 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "Static site using HTML5 and CSS3",
+  "description": "Static site created using HTML5 and CSS3",
   "main": "index.html",
   "scripts": {
     "start": "serve"
@@ -11,8 +11,8 @@
     "url": "git+https://github.com/codesandbox-app/static-template.git"
   },
   "keywords": [
-    "html5",
-    "css3"
+    "css3",
+    "html5"
   ],
   "author": "Ives van Hoorne",
   "license": "MIT",
