@@ -84,6 +84,26 @@ h6 {
   padding: 0.5rem 1.5rem;
 }
 
+.btn-light {
+  background: var(--light-color);
+}
+.btn-primary {
+  background: var(--primary-color);
+}
+.btn-secondary {
+  background: var(--secondary-color);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
 #main-nav {
   background: #fff;
   position: sticky;
@@ -160,5 +180,5 @@ h6 {
 }
 
 #showcase .showcase-content {
-  z-index: 1;
+  z-index: 3;
 }
