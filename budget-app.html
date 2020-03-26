@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis|Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/budget-app/styles.css" />
+    <title>Budget App</title>
+  </head>
+
+  <body>
+    <main id="main-banner">
+      <h5 class="avail-heading">
+        Available Budget in
+        <span class="avail-month">January</span>
+        <span class="avail-year">2020</span>
+      </h5>
+      <h1 id="avail-balance">+123.12</h1>
+      <div class="main-income">
+        <span class="main-income-text">Income</span>
+        <span class="main-income-val">12345</span>
+        <span class="main-income-per">23%</span>
+      </div>
+      <span class="main-expenses">
+        <span class="main-expenses-text">Expenses</span>
+        <span class="main-expenses-val">12345</span>
+        <span class="main-expenses-per">23%</span>
+      </span>
+    </main>
+
+    <section class="input-section">
+      <form>
+        <div class="input-section-fields">
+          <div>
+            <select id="income-expense" class="select" name="income-expense">
+              <option value="+">+</option>
+              <option value="-">-</option>
+            </select>
+          </div>
+          <div>
+            <input type="text" placeholder="name" class="name" id="name" />
+          </div>
+          <div>
+            <input type="text" placeholder="value" class="val" />
+          </div>
+          <div>
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="display">
+      <table class="display-income">
+        <thead>
+          <tr>
+            <td colspan="3">Income</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Income</td>
+            <td>value</td>
+            <td>del</td>
+          </tr>
+          <tr>
+            <td>Income</td>
+            <td>value</td>
+            <td>del</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="display-expense">
+        <thead>
+          <tr>
+            <td colspan="4">Expense</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Expense</td>
+            <td>value</td>
+            <td>per</td>
+            <td>del</td>
+          </tr>
+          <tr>
+            <td>Expense</td>
+            <td>value</td>
+            <td>per</td>
+            <td>del</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Font aweasome js  -->
+    <script
+      src="https://kit.fontawesome.com/1bc3836927.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src=""></script>
+  </body>
+</html>

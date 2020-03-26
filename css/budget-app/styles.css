@@ -1,0 +1,187 @@
+/* line 3, D:/Shubham/Budget-app/src/scss/styles.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Staatliches", cursive;
+}
+
+/* line 10, D:/Shubham/Budget-app/src/scss/styles.scss */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* line 15, D:/Shubham/Budget-app/src/scss/styles.scss */
+li {
+  list-style: none;
+}
+
+/* line 19, D:/Shubham/Budget-app/src/scss/styles.scss */
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+/* line 25, D:/Shubham/Budget-app/src/scss/styles.scss */
+img {
+  width: 100%;
+}
+
+/* line 29, D:/Shubham/Budget-app/src/scss/styles.scss */
+body {
+  background: #ccc;
+  color: #333;
+}
+
+/* line 34, D:/Shubham/Budget-app/src/scss/styles.scss */
+#main-banner {
+  background: url(https://picsum.photos/id/60/1000/1000/?blur=1) no-repeat
+    center right/cover;
+  height: 40vh;
+  color: #fff;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  justify-content: center;
+  text-align: center;
+  padding: 5% 0;
+  letter-spacing: 3px;
+}
+
+/* line 46, D:/Shubham/Budget-app/src/scss/styles.scss */
+#main-banner .avail-heading {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* line 52, D:/Shubham/Budget-app/src/scss/styles.scss */
+#main-banner #avail-balance {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* line 58, D:/Shubham/Budget-app/src/scss/styles.scss */
+#main-banner .main-income,
+#main-banner .main-expenses {
+  width: 28rem;
+  height: 2.5rem;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  justify-content: center;
+  text-align: start;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+/* line 70, D:/Shubham/Budget-app/src/scss/styles.scss */
+#main-banner .main-income {
+  background: cyan;
+  color: #333;
+}
+
+/* line 74, D:/Shubham/Budget-app/src/scss/styles.scss */
+#main-banner .main-expenses {
+  background: #fa5858;
+  color: #333;
+}
+
+/* line 82, D:/Shubham/Budget-app/src/scss/styles.scss */
+.input-section-fields {
+  display: grid;
+  grid-template-areas: "select my-name value submit";
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  padding: 1rem 34%;
+  background: #426a80;
+}
+
+/* line 91, D:/Shubham/Budget-app/src/scss/styles.scss */
+.input-section-fields .select {
+  grid-area: select;
+  height: 2rem;
+  width: 2.5rem;
+  border-radius: 25px;
+}
+
+/* line 97, D:/Shubham/Budget-app/src/scss/styles.scss */
+.input-section-fields .name {
+  grid-area: my-name;
+  height: 2rem;
+  width: 17rem;
+  border-radius: 25px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* line 104, D:/Shubham/Budget-app/src/scss/styles.scss */
+.input-section-fields .name:focus {
+  font-size: 1rem;
+  border-radius: 25px;
+  outline: #4fadfa;
+}
+
+/* line 110, D:/Shubham/Budget-app/src/scss/styles.scss */
+.input-section-fields .val {
+  grid-area: value;
+  height: 2rem;
+  width: 5rem;
+  border-radius: 25px;
+  text-align: center;
+}
+
+/* line 117, D:/Shubham/Budget-app/src/scss/styles.scss */
+.input-section-fields .submit-btn {
+  grid-area: submit;
+  height: 2rem;
+  width: 2.5rem;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* line 126, D:/Shubham/Budget-app/src/scss/styles.scss */
+.input-section-fields .submit-btn .fas {
+  color: green;
+}
+
+/* line 133, D:/Shubham/Budget-app/src/scss/styles.scss */
+.display {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+/* line 140, D:/Shubham/Budget-app/src/scss/styles.scss */
+.display table {
+  border-collapse: collapse;
+}
+
+/* line 143, D:/Shubham/Budget-app/src/scss/styles.scss */
+.display-income,
+.display-expense {
+  width: 25vw;
+  max-width: 500px;
+}
+
+/* line 148, D:/Shubham/Budget-app/src/scss/styles.scss */
+.display-income tr,
+.display-expense tr {
+  border-bottom: 2px solid #4fadfa;
+}
+
+/* line 152, D:/Shubham/Budget-app/src/scss/styles.scss */
+.display-income tr:nth-child(even),
+.display-expense tr:nth-child(even) {
+  background: #b5b5b6;
+}
+
+/*# sourceMappingURL=../css/styles.map */

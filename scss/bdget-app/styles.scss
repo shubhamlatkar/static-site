@@ -1,0 +1,156 @@
+@import "config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Staatliches", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+li {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background: $medium-color;
+  color: $dark-color;
+}
+
+#main-banner {
+  background: $bg-img no-repeat center right / cover;
+  height: 40vh;
+  color: #fff;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  justify-content: center;
+  text-align: center;
+  padding: 5% 0;
+  letter-spacing: 3px;
+
+  .avail-heading {
+    font-family: "Dosis", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #avail-balance {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .main {
+    &-income,
+    &-expenses {
+      width: 28rem;
+      height: 2.5rem;
+      display: grid;
+      grid-template-columns: 4fr 1fr 1fr;
+      justify-content: center;
+      text-align: start;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      letter-spacing: 1px;
+    }
+    &-income {
+      background: cyan;
+      color: $dark-color;
+    }
+    &-expenses {
+      background: rgb(250, 88, 88);
+      color: $dark-color;
+    }
+  }
+}
+
+.input-section {
+  &-fields {
+    display: grid;
+    grid-template-areas: "select my-name value submit";
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    padding: 1rem 34%;
+    background: $main-color;
+
+    .select {
+      grid-area: select;
+      height: 2rem;
+      width: 2.5rem;
+      border-radius: 25px;
+    }
+    .name {
+      grid-area: my-name;
+      height: 2rem;
+      width: 17rem;
+      border-radius: 25px;
+      font-size: 2rem;
+      text-align: center;
+      &:focus {
+        font-size: 1rem;
+        border-radius: 25px;
+        outline: #4fadfa;
+      }
+    }
+    .val {
+      grid-area: value;
+      height: 2rem;
+      width: 5rem;
+      border-radius: 25px;
+      text-align: center;
+    }
+    .submit-btn {
+      grid-area: submit;
+      height: 2rem;
+      width: 2.5rem;
+      background-color: Transparent;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+      .fas {
+        color: green;
+      }
+    }
+  }
+}
+
+.display {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+  text-align: center;
+  justify-content: center;
+
+  table {
+    border-collapse: collapse;
+  }
+  &-income,
+  &-expense {
+    width: 25vw;
+    max-width: 500px;
+
+    tr {
+      border-bottom: 2px solid #4fadfa;
+    }
+
+    tr:nth-child(even) {
+      background: #b5b5b6;
+    }
+  }
+}

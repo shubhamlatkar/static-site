@@ -1,0 +1,16 @@
+$website-width: 1280px;
+$main-color: #426a80;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+
+$bg-img: url(https://picsum.photos/id/60/1000/1000/?blur=1);
+// $bg-img: url(https://picsum.photos/200/300/?blur=1);
+
+@function set-text-color($color) {
+  @if(lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}

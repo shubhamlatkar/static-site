@@ -10,11 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/codesandbox-app/static-template.git"
   },
-  "keywords": [
-    "css3",
-    "html5"
-  ],
-  "author": "Ives van Hoorne",
+  "keywords": ["css3", "html5"],
+  "author": "Shubham Latkar",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/codesandbox-app/static-template/issues"
