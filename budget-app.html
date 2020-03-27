@@ -19,26 +19,25 @@
         <span class="avail-month">January</span>
         <span class="avail-year">2020</span>
       </h5>
-      <h1 id="avail-balance">+123.12</h1>
+      <h1 id="avail-balance"></h1>
       <div class="main-income">
         <span class="main-income-text">Income</span>
-        <span class="main-income-val">12345</span>
-        <span class="main-income-per">23%</span>
+        <span class="main-income-val"></span>
       </div>
       <span class="main-expenses">
         <span class="main-expenses-text">Expenses</span>
-        <span class="main-expenses-val">12345</span>
-        <span class="main-expenses-per">23%</span>
+        <span class="main-expenses-val"></span>
+        <span class="main-expenses-per"></span>
       </span>
     </main>
 
     <section class="input-section">
-      <form>
+      <form id="input-form">
         <div class="input-section-fields">
           <div>
             <select id="income-expense" class="select" name="income-expense">
-              <option value="+">+</option>
-              <option value="-">-</option>
+              <option value="expense">-</option>
+              <option value="income">+</option>
             </select>
           </div>
           <div>
@@ -57,45 +56,21 @@
     </section>
 
     <section class="display">
-      <table class="display-income">
+      <table class="display-income" id="display-income-table">
         <thead>
           <tr>
             <td colspan="3">Income</td>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>Income</td>
-            <td>value</td>
-            <td>del</td>
-          </tr>
-          <tr>
-            <td>Income</td>
-            <td>value</td>
-            <td>del</td>
-          </tr>
-        </tbody>
+        <tbody id="display-income-body"></tbody>
       </table>
-      <table class="display-expense">
+      <table class="display-expense" id="display-expense-table">
         <thead>
           <tr>
             <td colspan="4">Expense</td>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>Expense</td>
-            <td>value</td>
-            <td>per</td>
-            <td>del</td>
-          </tr>
-          <tr>
-            <td>Expense</td>
-            <td>value</td>
-            <td>per</td>
-            <td>del</td>
-          </tr>
-        </tbody>
+        <tbody id="display-expense-body"></tbody>
       </table>
     </section>
 
@@ -104,6 +79,6 @@
       src="https://kit.fontawesome.com/1bc3836927.js"
       crossorigin="anonymous"
     ></script>
-    <script src=""></script>
+    <script src="./scripts/budget-app/index.js"></script>
   </body>
 </html>
