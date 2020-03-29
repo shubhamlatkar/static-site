@@ -94,17 +94,36 @@ body {
       width: 2.5rem;
       border-radius: 25px;
     }
-    .name {
-      grid-area: my-name;
-      height: 2rem;
-      width: 17rem;
-      border-radius: 25px;
-      font-size: 2rem;
-      text-align: center;
-      &:focus {
-        font-size: 1rem;
+
+    .input-name-div {
+      position: relative;
+      .name-label {
+        position: absolute;
+        top: 6px;
+        left: 118px;
+        transition: all 0.5s ease-in-out;
+      }
+
+      .name:focus + .name-label {
+        left: 18px;
+      }
+
+      .name:valid + .name-label {
+        left: 18px;
+      }
+
+      .name {
+        grid-area: my-name;
+        height: 2rem;
+        width: 17rem;
         border-radius: 25px;
-        outline: #4fadfa;
+        text-align: center;
+        transition: all 0.1s ease-in-out;
+        &:focus {
+          border-radius: 25px;
+          outline: #4fadfa;
+          background: #cdd1cd;
+        }
       }
     }
     .val {
@@ -147,10 +166,23 @@ body {
 
     tr {
       border-bottom: 2px solid #4fadfa;
+      td:nth-child(3) {
+        i {
+          display: none;
+        }
+      }
     }
 
     tr:nth-child(even) {
       background: #b5b5b6;
+    }
+
+    tr:hover {
+      td:nth-child(3) {
+        i {
+          display: block;
+        }
+      }
     }
   }
 }

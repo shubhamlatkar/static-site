@@ -1,67 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Site Index Page</title>
-    <link rel="stylesheet" href="/css/Styles.css" />
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis|Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/budget-app/styles.css" />
+    <title>Budget App</title>
   </head>
+
   <body>
-    <nav id="navabr">
-      <h1 class="logo">
-        <span class="text-primary">Static</span>
-        Site
-      </h1>
-    </nav>
-    <div id="showcase">
-      <div class="showcase-content">
-        <a
-          href="https://d5c5b.codesandbox.io/edge-ledger.html"
-          class="button-class"
-          >Edge Ledger</a
-        >
-        <a
-          href="https://d5c5b.codesandbox.io/hamburger.html"
-          class="button-dark-class"
-          >Hamburger</a
-        >
-        <a
-          href="https://d5c5b.codesandbox.io/hotel-site.html"
-          class="button-class"
-          >hotel-site</a
-        >
-        <a
-          href="https://d5c5b.codesandbox.io/presentation.html"
-          class="button-dark-class"
-          >Presentation</a
-        >
-        <a
-          href="https://d5c5b.codesandbox.io/selectors.html"
-          class="button-class"
-          >Selectors</a
-        >
-        <a
-          href="https://d5c5b.codesandbox.io/knowledge-timeline.html"
-          class="button-dark-class"
-          >Knowledge Timeline</a
-        >
-        <a
-          href="https://d5c5b.codesandbox.io/dropdown.html"
-          class="button-class"
-          >Dropdown in header</a
-        >
-        <a
-          href="https://d5c5b.codesandbox.io/news-grid.html"
-          class="button-dark-class"
-          >News Grid</a
-        >
-        <a
-          href="https://d5c5b.codesandbox.io/budget-app.html"
-          class="button-class"
-          >Budget App</a
-        >
+    <main id="main-banner">
+      <h5 class="avail-heading">
+        Available Budget in
+        <span class="avail-month">January</span>
+        <span class="avail-year">2020</span>
+      </h5>
+      <h1 id="avail-balance"></h1>
+      <div class="main-income">
+        <span class="main-income-text">Income</span>
+        <span class="main-income-val"></span>
       </div>
-    </div>
+      <span class="main-expenses">
+        <span class="main-expenses-text">Expenses</span>
+        <span class="main-expenses-val"></span>
+        <span class="main-expenses-per"></span>
+      </span>
+    </main>
+
+    <section class="input-section">
+      <form id="input-form">
+        <div class="input-section-fields">
+          <div>
+            <select id="income-expense" class="select" name="income-expense">
+              <option value="income">+</option>
+              <option value="expense">-</option>
+            </select>
+          </div>
+          <div class="input-name-div">
+            <input type="text" placeholder="" class="name" id="name" required />
+            <label for="name" class="name-label">Name</label>
+          </div>
+          <div>
+            <input type="text" placeholder="value" class="val" />
+          </div>
+          <div>
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="display">
+      <table class="display-income" id="display-income-table">
+        <thead>
+          <tr>
+            <td colspan="3">Income</td>
+          </tr>
+        </thead>
+        <tbody id="display-income-body"></tbody>
+      </table>
+      <table class="display-expense" id="display-expense-table">
+        <thead>
+          <tr>
+            <td colspan="4">Expense</td>
+          </tr>
+        </thead>
+        <tbody id="display-expense-body"></tbody>
+      </table>
+    </section>
+
+    <!-- Font aweasome js  -->
+    <script
+      src="https://kit.fontawesome.com/1bc3836927.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/budget-app/index.js"></script>
   </body>
 </html>

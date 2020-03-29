@@ -108,24 +108,47 @@ body {
   border-radius: 25px;
 }
 
-/* line 97, D:/Shubham/Budget-app/src/scss/styles.scss */
-.input-section-fields .name {
+/* line 98, D:/Shubham/Budget-app/src/scss/styles.scss */
+.input-section-fields .input-name-div {
+  position: relative;
+}
+
+/* line 100, D:/Shubham/Budget-app/src/scss/styles.scss */
+.input-section-fields .input-name-div .name-label {
+  position: absolute;
+  top: 6px;
+  left: 118px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 107, D:/Shubham/Budget-app/src/scss/styles.scss */
+.input-section-fields .input-name-div .name:focus + .name-label {
+  left: 18px;
+}
+
+/* line 111, D:/Shubham/Budget-app/src/scss/styles.scss */
+.input-section-fields .input-name-div .name:valid + .name-label {
+  left: 18px;
+}
+
+/* line 115, D:/Shubham/Budget-app/src/scss/styles.scss */
+.input-section-fields .input-name-div .name {
   grid-area: my-name;
   height: 2rem;
   width: 17rem;
   border-radius: 25px;
-  font-size: 2rem;
   text-align: center;
+  transition: all 0.1s ease-in-out;
 }
 
-/* line 104, D:/Shubham/Budget-app/src/scss/styles.scss */
-.input-section-fields .name:focus {
-  font-size: 1rem;
+/* line 122, D:/Shubham/Budget-app/src/scss/styles.scss */
+.input-section-fields .input-name-div .name:focus {
   border-radius: 25px;
   outline: #4fadfa;
+  background: #cdd1cd;
 }
 
-/* line 110, D:/Shubham/Budget-app/src/scss/styles.scss */
+/* line 129, D:/Shubham/Budget-app/src/scss/styles.scss */
 .input-section-fields .val {
   grid-area: value;
   height: 2rem;
@@ -134,7 +157,7 @@ body {
   text-align: center;
 }
 
-/* line 117, D:/Shubham/Budget-app/src/scss/styles.scss */
+/* line 136, D:/Shubham/Budget-app/src/scss/styles.scss */
 .input-section-fields .submit-btn {
   grid-area: submit;
   height: 2rem;
@@ -146,12 +169,12 @@ body {
   overflow: hidden;
 }
 
-/* line 126, D:/Shubham/Budget-app/src/scss/styles.scss */
+/* line 145, D:/Shubham/Budget-app/src/scss/styles.scss */
 .input-section-fields .submit-btn .fas {
   color: green;
 }
 
-/* line 133, D:/Shubham/Budget-app/src/scss/styles.scss */
+/* line 152, D:/Shubham/Budget-app/src/scss/styles.scss */
 .display {
   display: grid;
   grid-template-columns: auto auto;
@@ -160,28 +183,40 @@ body {
   justify-content: center;
 }
 
-/* line 140, D:/Shubham/Budget-app/src/scss/styles.scss */
+/* line 159, D:/Shubham/Budget-app/src/scss/styles.scss */
 .display table {
   border-collapse: collapse;
 }
 
-/* line 143, D:/Shubham/Budget-app/src/scss/styles.scss */
+/* line 162, D:/Shubham/Budget-app/src/scss/styles.scss */
 .display-income,
 .display-expense {
   width: 25vw;
   max-width: 500px;
 }
 
-/* line 148, D:/Shubham/Budget-app/src/scss/styles.scss */
+/* line 167, D:/Shubham/Budget-app/src/scss/styles.scss */
 .display-income tr,
 .display-expense tr {
   border-bottom: 2px solid #4fadfa;
 }
 
-/* line 152, D:/Shubham/Budget-app/src/scss/styles.scss */
+/* line 170, D:/Shubham/Budget-app/src/scss/styles.scss */
+.display-income tr td:nth-child(3) i,
+.display-expense tr td:nth-child(3) i {
+  display: none;
+}
+
+/* line 176, D:/Shubham/Budget-app/src/scss/styles.scss */
 .display-income tr:nth-child(even),
 .display-expense tr:nth-child(even) {
   background: #b5b5b6;
+}
+
+/* line 182, D:/Shubham/Budget-app/src/scss/styles.scss */
+.display-income tr:hover td:nth-child(3) i,
+.display-expense tr:hover td:nth-child(3) i {
+  display: block;
 }
 
 /*# sourceMappingURL=../css/styles.map */

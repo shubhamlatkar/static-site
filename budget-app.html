@@ -36,12 +36,13 @@
         <div class="input-section-fields">
           <div>
             <select id="income-expense" class="select" name="income-expense">
-              <option value="expense">-</option>
               <option value="income">+</option>
+              <option value="expense">-</option>
             </select>
           </div>
-          <div>
-            <input type="text" placeholder="name" class="name" id="name" />
+          <div class="input-name-div">
+            <input type="text" placeholder="" class="name" id="name" required />
+            <label for="name" class="name-label">Name</label>
           </div>
           <div>
             <input type="text" placeholder="value" class="val" />
