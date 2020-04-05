@@ -41,6 +41,7 @@ body {
 #navbar ul li:hover a {
   color: #fff;
 }
+
 #navbar ul li:hover ul {
   display: block;
   position: absolute;
@@ -48,6 +49,7 @@ body {
   width: 200px;
   margin-top: 1rem;
 }
+
 #navbar ul li:hover ul li {
   display: block;
   background: #e7e7e7e7;

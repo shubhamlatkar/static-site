@@ -55,9 +55,31 @@ h1 {
   width: 400px;
   padding: 1rem;
   background: var(--secondary-color);
-  transition: all 0.5s easy-in-out;
+  transition: all 0.5s ease-in-out;
   visibility: hidden;
   opacity: 0;
+}
+
+#timeline ul li div ol li {
+  position: relative;
+  width: 90%;
+  margin: 16px;
+  padding: 5px;
+  background: inherit;
+  display: block;
+}
+
+#timeline ul li div ol li:after {
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  background: none;
+  transform: none;
+  border-radius: none;
+  transition: none;
 }
 
 /* right side */
@@ -83,7 +105,7 @@ h1 {
   background: inherit;
   transform: translateX(-50%);
   border-radius: 50%;
-  transition: background 05s easy-in-out;
+  transition: background 0.5s ease-in-out;
 }
 
 /* arrows */
